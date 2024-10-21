@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 
 app = Flask(__name__)
-CORS(app)  # Добавляем CORS
+CORS(app)  
 
 @app.route('/conferences', methods=['GET'])
 def get_conferences():
